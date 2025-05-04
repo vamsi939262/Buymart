@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'; // Use HashRouter
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
@@ -55,8 +55,6 @@ function App() {
           <Route path="/sports/:id" element={<Sportsdetail />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/profile" element={<Profile />} />
-          
-
 
           {/* Catch-All Route */}
           <Route path="*" element={<Navigate to="/" replace />} />
