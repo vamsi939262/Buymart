@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Buymart/static/css/main.a9c03c43.css",
+    "main.js": "/Buymart/static/js/main.0d72a5d4.js",
+    "static/js/453.90416fed.chunk.js": "/Buymart/static/js/453.90416fed.chunk.js",
+    "static/media/slick.svg": "/Buymart/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Buymart/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Buymart/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Buymart/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Buymart/index.html",
+    "main.a9c03c43.css.map": "/Buymart/static/css/main.a9c03c43.css.map",
+    "main.0d72a5d4.js.map": "/Buymart/static/js/main.0d72a5d4.js.map",
+    "453.90416fed.chunk.js.map": "/Buymart/static/js/453.90416fed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9c03c43.css",
+    "static/js/main.0d72a5d4.js"
+  ]
+}
