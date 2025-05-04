@@ -1,0 +1,140 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e3f2fd, #e0f7fa);
+    padding: 1rem;
+  }
+  
+  .profileCard {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .profileImage {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 1.5rem;
+    cursor: pointer;
+  }
+  
+  .profileImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid #90caf9;
+    object-fit: cover;
+  }
+  
+  .profileImage .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(25, 118, 210, 0.8);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 6px 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transition: opacity 0.3s ease;
+  }
+  
+  .formGroup {
+    margin: 1rem 0;
+    text-align: left;
+  }
+  
+  .formGroup label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333;
+  }
+  
+  .formGroup input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    transition: 0.2s;
+    background-color: #f7f7f7;
+  }
+  
+  .formGroup input:disabled {
+    background-color: #eaeaea;
+  }
+  
+  .formGroup input:focus {
+    border-color: #64b5f6;
+    box-shadow: 0 0 0 3px rgba(100, 181, 246, 0.2);
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .logout,
+  .save,
+  .cancel,
+  .edit {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .logout {
+    background-color: #ef5350;
+    color: white;
+  }
+  
+  .logout:hover {
+    background-color: #d32f2f;
+  }
+  
+  .save {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .save:hover {
+    background-color: #388e3c;
+  }
+  
+  .cancel {
+    background-color: #9e9e9e;
+    color: white;
+  }
+  
+  .cancel:hover {
+    background-color: #757575;
+  }
+  
+  .edit {
+    background-color: #1976d2;
+    color: white;
+  }
+  
+  .edit:hover {
+    background-color: #1565c0;
+  }
+  

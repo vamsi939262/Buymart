@@ -1,0 +1,372 @@
+/* Home.module.css */
+
+/* Container for the entire page */
+.container {
+    margin-top: 80px;
+    padding-bottom: 60px;
+    max-width: 1300px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Slider section */
+.sliderContainer {
+    margin-bottom: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.slide {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 ratio = 9 / 16 * 100 = 56.25% */
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    transition: transform 0.7s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.slide img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* Deals Section */
+.dealsSection {
+    margin: 60px 0;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.dealsTitle {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #0064f9, #009dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 255, 170, 0.4);
+    letter-spacing: 1px;
+    animation: dealsPop 2.5s infinite;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dealsTitle:hover {
+    transform: scale(1.05);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 255, 200, 0.6);}
+
+/* Animation Keyframes */
+
+
+/* Responsive Title Scaling */
+@media screen and (max-width: 768px) {
+    .dealsTitle {
+        font-size: 2.2rem;
+    }
+}
+
+
+/* Deal Cards */
+.dealCard {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 18px;
+}
+
+.dealCard:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Categories Section */
+.categories {
+    margin-top: 60px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.categoriesTitle {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #0064f9, #009dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 255, 170, 0.4);
+    letter-spacing: 1px;
+    animation: titleBounce 2.5s infinite;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.categoriesTitle:hover {
+    transform: scale(1.05);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 255, 200, 0.6);
+}
+
+/* Animation Keyframes */
+
+
+/* Responsive Title Scaling */
+@media screen and (max-width: 768px) {
+    .categoriesTitle {
+        font-size: 2.2rem;
+    }
+}
+
+
+/* Category Cards */
+.categoryCard {
+    transition: all 0.4s ease;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform-origin: center;
+}
+
+.categoryCard:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 14px 38px rgba(0, 0, 0, 0.2);
+}
+
+.categoryCard img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.categoryCard:hover img {
+    transform: scale(1.07);
+    filter: brightness(1.1);
+}
+
+.categoryCard .MuiCardContent-root {
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.categoryCard h6 {
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.categoryCard:hover h6 {
+    color: #00695c;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Enhancements */
+@media screen and (max-width: 768px) {
+    .dealsTitle, .categoriesTitle {
+        font-size: 2rem;
+    }
+
+    .slide {
+        padding-bottom: 60%;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .categoryCard img {
+        height: 180px;
+    }
+}
+
+/* Top Rated Products Section */
+.topRatedSection {
+    margin: 60px 0;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.topRatedTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1976d2;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+/* Top Rated Product Cards */
+.topRatedCard {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 18px;
+}
+
+.topRatedCard:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.topRatedCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.topRatedCard:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.topRatedCard .MuiCardContent-root {
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.topRatedCard h6 {
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.topRatedCard:hover h6 {
+    color: #1976d2;
+}
+
+/* Recently Viewed Section */
+.recentlyViewedSection {
+    margin: 60px 0;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.recentlyViewedTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #388e3c;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+/* Recently Viewed Product Cards */
+.recentlyViewedCard {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 18px;
+}
+
+.recentlyViewedCard:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.recentlyViewedCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.recentlyViewedCard:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.recentlyViewedCard .MuiCardContent-root {
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.recentlyViewedCard h6 {
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.recentlyViewedCard:hover h6 {
+    color: #388e3c;
+}
+
+/* Trending Now Section */
+.trendingNowSection {
+    margin: 60px 0;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.trendingNowTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fbc02d;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+/* Trending Now Product Cards */
+.trendingNowCard {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 18px;
+}
+
+.trendingNowCard:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.trendingNowCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+.trendingNowCard:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.trendingNowCard .MuiCardContent-root {
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.trendingNowCard h6 {
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.trendingNowCard:hover h6 {
+    color: #fbc02d;
+}
+

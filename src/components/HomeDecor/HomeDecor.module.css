@@ -1,0 +1,193 @@
+.container {
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #fffdfc, #fbe7e4);
+  min-height: 100vh;
+}
+/* Header Section */
+.headerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/* Page Title */
+.pageTitle {
+  flex: 1;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  animation: fadeIn 1s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.pageTitle:hover {
+  color: #d32f2f;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Sort Bar */
+.sortBar {
+  min-width: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Page Title */
+.title {
+  font-size: 70rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.title:hover {
+  color: #d32f2f;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Sort Bar */
+.sortBar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid Styling */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Product Card */
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.6s ease forwards;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+/* Product Content */
+.content {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.productName {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.card:hover .productName {
+  color: #e53935;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.reviews {
+  font-size: 0.9rem;
+  color: #757575;
+}
+
+/* Discount Badge */
+.discountBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff5252;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 50px;
+  z-index: 10;
+}
+
+/* View Button */
+.button {
+  margin-top: 0.8rem;
+  background-color: #e53935 !important;
+  color: white !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c62828 !important;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .image {
+    height: 180px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
